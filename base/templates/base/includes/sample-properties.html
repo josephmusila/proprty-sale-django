@@ -1,0 +1,30 @@
+
+
+      <div class="container-fluid">
+        <div class="row">
+            <h5 class="property-count">{{propertyCount}} Properties Found </h5>
+            {% for item in allproperties %}
+               <div class="col-sm-12 col-lg-3 col-md-6">
+              <div class="properties-card">
+                  <div class="card-image">
+                    <img src="{{item.image.url}}" alt="image">
+                 
+                    <a class="btn btn-warning btn-sm " href="#" role="button">{{item.propertyStatus}} </a>
+                   
+                  </div>
+                 <div class="details">
+                  <p class="name">{{item.name}}</p>
+                  <p class="price">Ksh {{item.starting_price}}</p>
+                  <p class="size">Size {{item.description}}</p>
+                  <p class="amenities">{{ item.amenities}}</p>
+                  <hr>
+                  <a class="btn btn-warning btn-sm " href="{% url 'home' %}?q={{item.location }}" role="button">{{item.location}} </a>
+                  <a class="btn btn-info btn-sm " href="{% url 'details' item.id %}" role="button">Details </a>
+                 </div>
+                </div>
+          </div>
+            {% endfor %}
+         
+            
+        </div>
+    </div>

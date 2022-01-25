@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+   
+}
+.home-section{
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    
+    background: url(../images/232267-most-popular-4k-desktop-wallpapers-3840x2160.jpg);
+    background-size: cover;
+
+}
+.home-content{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home-content p{
+    font-style: italic;
+    color: white;
+}
+.welcome-text{
+    font-size: 50px;
+    color: white;
+}
+
+.search-section{
+    display: flex;
+    flex-direction: row;
+    opacity: 0.9;
+   
+    width: 70%;
+    background-color: rgb(240, 243, 240);
+    padding: 10px;
+}
+.search-section form{
+    width: 100%;
+}
+
+#adv-search{
+    width: 75%;
+}
+#adv-search-btn{
+    width: 25%;
+}
+select{
+   
+    margin: 3px;
+    width: 95%;
+}
+
+select:invalid{
+    color: gray;
+}
+option[default]{
+    display: none;
+}
+
+.description-section{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.properties{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+.property-count{
+   
+text-align: center;
+text-decoration: underline;
+}
+.properties-card{
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+    margin: 20px;
+}
+.card-image{
+    height: 50%;
+}
+.card-image img{
+    height: 100%;
+    width: 100%;
+}
+.card-image a{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.details{
+    height: 40%;
+    text-align: center;
+}
+.name{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.price{
+    color: green;
+}
+
+/* count section */
+
+#sold-out{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+#tallies div{
+    border-left: 2px solid white;
+    background-color: orangered;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+span{
+    color: aliceblue;
+}
+
+/* footer */
+
+
+
+footer.footer-section {
+    background: rgba(0, 0, 0, 0) url("https://images.pexels.com/photos/316902/pexels-photo-316902.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") no-repeat scroll left top / cover;
+    padding: 60px 0 50px;
+}
+.bg-with-black {
+    position: relative;
+}
+.footer-top-section {
+    margin: 0 0 47px;
+}
+.single-fta > img {
+    margin: 0 0 7px;
+}
+.single-fta ul.fta-list {
+    list-style: outside none none;
+    padding-left: 0;
+}
+.single-fta ul.fta-list li, .single-fta ul.fta-list li a {
+    color: #e5e5e5;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 36px;
+    text-decoration: none;
+}
+.single-fta ul.fta-list {
+    list-style: outside none none;
+    padding-left: 0;
+}
+.fta-title {
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0 0 20px;
+}
+
+.fba-links {
+    text-align: right;
+}
+
+.fba-links ul li a {
+    color: #e5e5e5;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.fba-links ul {
+    list-style: outside none none;
+    padding: 0;
+}
+.fba-links ul li {
+    display: inline-block;
+    margin-left: 28px;
+}
+.fba-copyright p {
+    color: #aaaaaa;
+    line-height: 30px;
+}
+
+
+/* details */
+
+#details-container{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.detail-wrapper img{
+    width: 100%;
+    height: 60%;
+
+}
+#details-name{
+    color: green;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#detail-description h4{
+    font-size: 10;
+    color: green;
+}
+#detail-description p{
+    text-transform: capitalize;
+    font-size: 10;
+    color: rgb(19, 19, 22);
+}
+#detail-description p a{
+    font-size: 10;
+    color: #ff0015;
+}
+#customer-care{
+    text-decoration: none;
+    text-transform: uppercase;
+}

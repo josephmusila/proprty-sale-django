@@ -1,0 +1,80 @@
+<footer class="footer-section bg-with-black" id="footer">
+    <div class="footer-top-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Our Services</h3>
+                        <!-- <img src="http://themeinnovation.com/demo2/html/build-up/img/home1/logo2.png" alt=""> -->
+                        <ul class="fta-list">
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>Real Eastates</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Investments Management</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span>Taxes Planning</a></li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title"> Our Offiices</h3>
+                        <ul class="fta-list">
+                            <li><a href="#"><i class="fa fa-square"></i>Nairobi CBD</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Thika</a></li>
+                            <li><a href="#"><i class="fa fa-square"></i>Nakuru </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Customer Care</h3>
+                        <ul class="fta-list">
+                            {% for item in owner %}
+                            <li id="customer-care">{{item.lastname}} -- {{item.phoneContacts}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single-fta">
+                        <h3 class="fta-title">Contact Us</h3>
+                        <ul class="fta-list">
+                            <li>Address: 8th floor, 379 Hudson St, New York, NY 10018</li>
+                            <li>Phone: (+1) 96 716 6879</li>
+                            {% for item in owner %}
+                            <li>Email: {{item.ownerEmail}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="footer-bottom">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="fba-copyright">
+                                    <p>Copyright © 2022. All rights reserved.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="fba-links">
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Term & Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Sites Map</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

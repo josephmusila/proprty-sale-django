@@ -1,0 +1,45 @@
+<div class="container-fluid" id="sold-out">
+    <div class="row" id="tallies">
+        <div class="col-sm-12 col-lg-4" id="deeds-div">
+            <p>Title Deeds Given: Over <span id="deeds"></span></p>
+        </div>
+        <div class="col-sm-12 col-lg-4" id="sold-div">
+            <p>Properties Sold: Over <span id="sold"></span></p>
+        </div>
+        <div class="col-sm-12 col-lg-4" id="rented-div">
+            <p>Properties rented: Over <span id="rented"></span></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var deeds=0;
+    var sold=0;
+    var rented=0;
+
+    var intervalId=setInterval(()=>{
+        if(deeds===350){
+            clearInterval(intervalId);
+        }
+        document.getElementById("deeds").innerHTML=deeds;
+        deeds+=50;
+
+    },100);
+    var intervalId2=setInterval(()=>{
+        if(sold===500){
+            clearInterval(intervalId2);
+        }
+        document.getElementById("sold").innerHTML=sold;
+        sold+=10;
+
+    },100);
+
+    var intervalId3=setInterval(()=>{
+        if(rented===1500){
+            clearInterval(intervalId3);
+        }
+        document.getElementById("rented").innerHTML=rented;
+        rented+=50;
+
+    },100);
+</script>
