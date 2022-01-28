@@ -87,6 +87,12 @@ option[default]{
 text-align: center;
 text-decoration: underline;
 }
+#status{
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    display: flex;
+}
 .properties-card{
     width: 100%;
     height: 500px;
@@ -239,4 +245,9 @@ footer.footer-section {
 #customer-care{
     text-decoration: none;
     text-transform: uppercase;
+}
+
+#about{
+    height: 500px;
+    width: 100%;
 }
